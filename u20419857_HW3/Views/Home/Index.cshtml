@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Library Home Page</h1>
+
+    <div id="students-section">
+        <h2>Students</h2>
+        <button id="create-student-btn">Create New Student</button>
+        <table id="students-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody id="students-body">
+            </tbody>
+        </table>
+    </div>
+
+    <div id="books-section">
+        <h2>Books</h2>
+        <button id="create-book-btn">Create New Book</button>
+        <table id="books-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="books-body">
+            </tbody>
+        </table>
+    </div>
+
+    <div id="create-student-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Create New Student</h2>
+            <form id="create-student-form">
+                <label for="student-name">Name:</label>
+                <input type="text" id="student-name" required>
+                <label for="student-email">Email:</label>
+                <input type="email" id="student-email" required>
+                <label for="student-phone">Phone:</label>
+                <input type="text" id="student-phone" required>
+                <button type="submit">Create Student</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="create-book-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Create New Book</h2>
+            <form id="create-book-form">
+                <label for="book-title">Title:</label>
+                <input type="text" id="book-title" required>
+                <label for="book-author">Author:</label>
+                <input type="text" id="book-author" required>
+                <button type="submit">Create Book</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
